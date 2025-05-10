@@ -9,5 +9,16 @@
 #                 # if sp.count(i)==1:
 # dvenadcsati()
 
-print("bye world")
-print("hello world")
+def dvadchatshest():
+    sp2=[]
+    with open("test4.txt", "r") as file:
+        data=file.readlines()
+        S=int(data[0].split()[0])
+        print(S)
+        sp=[int(x) for x in data[1:]]
+        sp.sort()
+        for i in sp:
+            if i+sum(sp2)<=S:
+                sp2.append(i)
+        print(len(sp2), sp2)
+dvadchatshest()

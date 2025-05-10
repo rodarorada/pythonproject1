@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3064bce6-0573-403c-8790-0c465b43fbbc" name="Changes" comment="initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="3064bce6-0573-403c-8790-0c465b43fbbc" name="Changes" comment="hello">
+      <change afterPath="$PROJECT_DIR$/fle/test4.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fle/zadachi2.py" beforeDir="false" afterPath="$PROJECT_DIR$/fle/zadachi2.py" afterDir="false" />
     </list>
@@ -161,7 +161,23 @@
       <option name="project" value="LOCAL" />
       <updated>1746867889755</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1374:347829:892347">
+      <option name="closed" value="true" />
+      <created>1746886996783</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1746886996783</updated>
+    </task>
+    <task id="LOCAL-00003" summary="hello">
+      <option name="closed" value="true" />
+      <created>1746887133285</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1746887133285</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -177,6 +193,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="1374:347829:892347" />
+    <MESSAGE value="hello" />
+    <option name="LAST_COMMIT_MESSAGE" value="hello" />
   </component>
 </project>
