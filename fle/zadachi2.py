@@ -34,9 +34,14 @@ def shestnadchat():
         data=file.readlines()
         sp = [int(x) for x in data[1:]]
         for i in sp:
-            if i>50
+            if i>50:
                 sp2.append(i)
                 suma=suma+i
         sp2.sort()
         for i in range(len(sp2)):
             if i<len(sp2)//2:
+                suma=suma+sp2[i]*0.75
+            else:
+                suma=suma+sp2[i]
+    print(sp2,suma)
+shestnadchat()
