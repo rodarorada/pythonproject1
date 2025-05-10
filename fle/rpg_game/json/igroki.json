@@ -1,0 +1,38 @@
+{
+    "000000000": {
+        "username": "tester",
+        "nickname": "mamkin_nagibator",
+        "inventar": {
+            "kamen1": {
+                "name": "камень",
+                "opisanie": "это обычный камень.",
+                "kolvo": 29,
+                "photo": "kamen1"
+            }
+        }
+    },
+    "6402241967": {
+        "username": "Dio_comunist",
+        "nickname": "/start",
+        "inventar": {
+            "kamen1": {
+                "name": "камень",
+                "opisanie": "это обычный камень.",
+                "kolvo": 7,
+                "photo": "kamen1"
+            },
+            "kamen2": {
+                "name": "камень гигачад",
+                "opisanie": "это НЕобычный камень.",
+                "kolvo": 5,
+                "photo": "kamen2"
+            },
+            "mech": {
+                "name": "меч",
+                "opisanie": "старый, ржавый, погнивший меч.",
+                "kolvo": 3,
+                "photo": "mech"
+            }
+        }
+    }
+}

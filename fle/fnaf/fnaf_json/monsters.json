@@ -1,0 +1,35 @@
+{
+  "leshi": {
+    "pyti": ["cam1", "cam2", "cam3", "cam4", "cam5", "cam6", "cam8", "room"],
+    "photo": "leshi.jpeg"
+  },
+    "po": {
+    "pyti": ["cam5", "cam6", "cam8", "cam11", "cam7", "room"],
+    "photo": "po.jpeg"
+  },
+    "old_po": {
+    "pyti": ["cam9", "cam10", "cam11", "cam7"],
+    "photo": "old_po.jpeg"
+  },
+    "drago": {
+    "pyti": ["cam2", "cam3", "cam4", "room"],
+    "photo": "drago.jpeg"
+  },
+    "mimic": {
+        "mimic": {
+          "pyti": ["cam1", "cam2", "cam3", "cam4", "cam5", "cam6", "cam7", "room"],
+          "photo": "leshi.jpeg",
+          "nomer": 1
+        },
+          "po_mimic": {
+            "pyti": ["cam5", "cam6", "cam8", "cam11", "cam7", "cam12", "room"],
+            "photo": "po.jpeg",
+            "nomer": 2
+        },
+          "old_po_mimic": {
+            "pyti": ["cam9", "cam10", "cam11", "cam7"],
+            "photo": "old_po.jpeg",
+            "nomer": 3
+        }
+    }
+}

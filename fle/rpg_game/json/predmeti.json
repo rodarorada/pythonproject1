@@ -1,0 +1,20 @@
+{
+  "kamen1": {
+    "name": "камень",
+    "opisanie": "это обычный камень.",
+    "kolvo": 1,
+    "photo": "kamen1"
+  },
+  "kamen2": {
+    "name": "камень гигачад",
+    "opisanie": "это НЕобычный камень.",
+    "kolvo": 1,
+    "photo": "kamen2"
+  },
+  "mech": {
+    "name": "меч",
+    "opisanie": "старый, ржавый, погнивший меч.",
+    "kolvo": 1,
+    "photo": "mech"
+  }
+}
