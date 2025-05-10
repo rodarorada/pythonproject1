@@ -8,17 +8,35 @@
 #                 print(chet, nechet)
 #                 # if sp.count(i)==1:
 # dvenadcsati()
+#
+# def dvadchatshest():
+#     sp2=[]
+#     with open("test4.txt", "r") as file:
+#         data=file.readlines()
+#         S=int(data[0].split()[0])
+#         print(S)
+#         sp=[int(x) for x in data[1:]]
+#         sp.sort()
+#         for i in sp:
+#             if i+sum(sp2)<=S:
+#                 sp2.append(i)
+#         for i in sp[::-1]:
+#             if i+sum(sp2[:-1])<=S:
+#                 sp2[-1]=i
+#                 break
+#         print(len(sp2), sp2)
+# dvadchatshest()
 
-def dvadchatshest():
+def shestnadchat():
+    suma=0
     sp2=[]
     with open("test4.txt", "r") as file:
         data=file.readlines()
-        S=int(data[0].split()[0])
-        print(S)
-        sp=[int(x) for x in data[1:]]
-        sp.sort()
+        sp = [int(x) for x in data[1:]]
         for i in sp:
-            if i+sum(sp2)<=S:
+            if i>50
                 sp2.append(i)
-        print(len(sp2), sp2)
-dvadchatshest()
+                suma=suma+i
+        sp2.sort()
+        for i in range(len(sp2)):
+            if i<len(sp2)//2:
