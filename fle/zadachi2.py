@@ -28,6 +28,7 @@
 # dvadchatshest()
 
 def shestnadchat():
+    ch=0
     suma=0
     sp2=[]
     with open("test4.txt", "r") as file:
@@ -36,12 +37,14 @@ def shestnadchat():
         for i in sp:
             if i>50:
                 sp2.append(i)
+            else:
                 suma=suma+i
         sp2.sort()
         for i in range(len(sp2)):
             if i<len(sp2)//2:
+                ch=sp2[i]
                 suma=suma+sp2[i]*0.75
             else:
                 suma=suma+sp2[i]
-    print(sp2,suma)
+    print(sp2,suma,ch)
 shestnadchat()
