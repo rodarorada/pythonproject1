@@ -1,50 +1,104 @@
 # def dvenadcsati():
-#     with open("test2.txt", "r") as file:
-#             data=[int(x) for x in file.readlines()]
-#             for i in data:
-#                 chet=[int(x) for x in data if x%2==0]
-#                 nechet = [int(x) for x in data if x % 2 == 1]
-#                 sp=[int(x) for x in str(i).split()]
-#                 print(chet, nechet)
-#                 # if sp.count(i)==1:
-# dvenadcsati()
+# #     with open("test2.txt", "r") as file:
+# #             data=[int(x) for x in file.readlines()]
+# #             for i in data:
+# #                 chet=[int(x) for x in data if x%2==0]
+# #                 nechet = [int(x) for x in data if x % 2 == 1]
+# #                 sp=[int(x) for x in str(i).split()]
+# #                 print(chet, nechet)
+# #                 # if sp.count(i)==1:
+# # dvenadcsati()
+# #
+# # def dvadchatshest():
+# #     sp2=[]
+# #     with open("test4.txt", "r") as file:
+# #         data=file.readlines()
+# #         S=int(data[0].split()[0])
+# #         print(S)
+# #         sp=[int(x) for x in data[1:]]
+# #         sp.sort()
+# #         for i in sp:
+# #             if i+sum(sp2)<=S:
+# #                 sp2.append(i)
+# #         for i in sp[::-1]:
+# #             if i+sum(sp2[:-1])<=S:
+# #                 sp2[-1]=i
+# #                 break
+# #         print(len(sp2), sp2)
+# # dvadchatshest()
 #
-# def dvadchatshest():
+# def shestnadchat():
+#     ch=0
+#     suma=0
 #     sp2=[]
 #     with open("test4.txt", "r") as file:
 #         data=file.readlines()
-#         S=int(data[0].split()[0])
-#         print(S)
-#         sp=[int(x) for x in data[1:]]
-#         sp.sort()
+#         sp = [int(x) for x in data[1:]]
 #         for i in sp:
-#             if i+sum(sp2)<=S:
+#             if i>50:
 #                 sp2.append(i)
-#         for i in sp[::-1]:
-#             if i+sum(sp2[:-1])<=S:
-#                 sp2[-1]=i
-#                 break
-#         print(len(sp2), sp2)
-# dvadchatshest()
+#             else:
+#                 suma=suma+i
+#         sp2.sort()
+#         for i in range(len(sp2)):
+#             if i<len(sp2)//2:
+#                 ch=sp2[i]
+#                 suma=suma+sp2[i]*0.75
+#             else:
+#                 suma=suma+sp2[i]
+#     print(sp2,suma,ch)
+# shestnadchat()
 
-def shestnadchat():
-    ch=0
-    suma=0
-    sp2=[]
+# def semnadchat():
+#     ch=0
+#     suma=0
+#     sp2=[]
+#     with open("test4.txt", "r") as file:
+#         data=file.readlines()
+#         sp = [int(x) for x in data[1:]]
+#         for i in sp:
+#             if i>100:
+#                 sp2.append(i)
+#             else:
+#                 suma=suma+i
+#         sp2.sort()
+#         for i in range(len(sp2)):
+#             if i<len(sp2)//2:
+#                 ch=sp2[i]
+#                 suma=(suma+sp2[i])/100*30
+#             else:
+#                 suma=suma+sp2[i]
+#     print(sp2,suma,ch)
+
+# from threading import Timer
+
+def semnadchat():
     with open("test4.txt", "r") as file:
         data=file.readlines()
-        sp = [int(x) for x in data[1:]]
-        for i in sp:
-            if i>50:
-                sp2.append(i)
-            else:
-                suma=suma+i
-        sp2.sort()
-        for i in range(len(sp2)):
-            if i<len(sp2)//2:
-                ch=sp2[i]
-                suma=suma+sp2[i]*0.75
-            else:
-                suma=suma+sp2[i]
-    print(sp2,suma,ch)
-shestnadchat()
+        print("введите скидку")
+        procent = int(input())
+
+        (sp2, suma, ch) = semnadchatint(data,procent)
+        print(sp2, suma, ch)
+
+def semnadchatint(data,procent):
+    ch = 0
+    suma = 0
+    sp2 = []
+    sp = [int(x) for x in data[1:]]
+    for i in sp:
+        if i > 100:
+            sp2.append(i)
+        else:
+            suma = suma + i
+    sp2.sort()
+    for i in range(len(sp2)):
+        if i < len(sp2) // 2:
+            ch = sp2[i]
+            suma = (suma + sp2[i]) / 100 * procent
+        else:
+            suma = suma + sp2[i]
+    my_tuple = (sp2, suma, ch)
+    return my_tuple
+
+semnadchat()
