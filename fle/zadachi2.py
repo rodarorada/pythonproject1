@@ -72,9 +72,9 @@
 
 from threading import Timer
 
-def repeater(interval, function):
-    Timer(interval, repeater, [interval, function]).start()
-    function()
+# def repeater(interval, function):
+#     Timer(interval, repeater, [interval, function]).start()
+#     function()
 
 # def Timer():
 #     kol=0
@@ -159,3 +159,21 @@ from itertools import *
 #                 kol=kol+1
 #     print(kol)
 # vosem()
+#
+# def chetirnadchat():
+#     st="012345678"
+#     kol=0
+#     for i in product(st,repeat=5):
+#         if i[0]!="0":
+#             if i.count("5")==1:
+#                 if i.index("5")==0:
+#                     if int(i[1])%2==0:
+#                         kol=kol+1
+#                 elif i.index("5") == 4:
+#                     if int(i[-2])%2==0:
+#                         kol=kol+1
+#                 else:
+#                     if int(i[i.index("5")-1])%2==0 and int(i[i.index("5")+1])%2==0:
+#                         kol=kol+1
+#     print(kol)
+# chetirnadchat()
