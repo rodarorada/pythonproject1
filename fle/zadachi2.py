@@ -70,7 +70,15 @@
 #                 suma=suma+sp2[i]
 #     print(sp2,suma,ch)
 
-# from threading import Timer
+from threading import Timer
+
+def repeater(interval, function):
+    Timer(interval, repeater, [interval, function]).start()
+    function()
+
+# def Timer():
+#     kol=0
+#
 
 def semnadchat():
     with open("test4.txt", "r") as file:
@@ -101,4 +109,38 @@ def semnadchatint(data,procent):
     my_tuple = (sp2, suma, ch)
     return my_tuple
 
-semnadchat()
+# semnadchat()
+
+from itertools import *
+
+# def vosem():
+#     kol=0
+#     shifr=""
+#     for i1 in range(1,5):
+#         for i2 in range(1, 5):
+#             for i3 in range(1, 5):
+#                 for i4 in range(1, 5):
+#                     for i5 in range(1, 5):
+#                         shifr=str(i1)+str(i2)+str(i3)+str(i4)+str(i5)
+#                         if shifr.count("1")==2:
+#                             kol=kol+1
+#     print(kol)
+# vosem()
+
+# def vosem2():
+#     st="1234"
+#     kol=0
+#     for i in product(st, repeat=5):
+#         if i.count("1")==2:
+#             kol=kol+1
+#     print(kol)
+# vosem2()
+
+def chetiri():
+    st="0123456"
+    kol=0
+    for i in product(st, repeat=4):
+        if int(i[0])>int(i[1])>int(i[2])>int(i[3]):
+            kol=kol+1
+    print(kol)
+chetiri()
