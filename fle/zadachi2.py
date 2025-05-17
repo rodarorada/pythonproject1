@@ -136,11 +136,26 @@ from itertools import *
 #     print(kol)
 # vosem2()
 
-def chetiri():
-    st="0123456"
-    kol=0
-    for i in product(st, repeat=4):
-        if int(i[0])>int(i[1])>int(i[2])>int(i[3]):
-            kol=kol+1
-    print(kol)
-chetiri()
+# def chetiri():
+#     st="0123456"
+#     kol=0
+#     for i in product(st, repeat=4):
+#         if int(i[0])>int(i[1])>int(i[2])>int(i[3]):
+#             kol=kol+1
+#     print(kol)
+# chetiri()
+
+# def vosem():
+#     st="0123456789"
+#     kol=0
+#     for i in permutations(st,4):
+#         if i[0]!="0":
+#             flag = True
+#             for j in range(len(i)-1):
+#                 if int(i[j])%2==int(i[j+1])%2:
+#                     flag=False
+#                     break
+#             if flag==True:
+#                 kol=kol+1
+#     print(kol)
+# vosem()
