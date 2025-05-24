@@ -33,9 +33,14 @@ from itertools import *
 #                 kol=kol+1
 #     print(kol)
 # vosemnadcat()
-
-def dvadcat_odin():
-    st="0123456"
-    kol=0
-    for i in product(st,repeat=5):
-        if int(i[0])%2==0:
+#
+# def dvadcat_odin():
+#     st="0123456"
+#     kol=0
+#     for i in product(st,repeat=5):
+#         if int(i[0])%2==0:
+#             if i[-1]!="2" or i[-1]!="3":
+#                 if i.count("1")==2:
+#                     kol=kol+1
+#     print(kol)
+# dvadcat_odin()
