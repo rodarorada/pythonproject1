@@ -80,34 +80,34 @@ from threading import Timer
 #     kol=0
 #
 
-def semnadchat():
-    with open("test4.txt", "r") as file:
-        data=file.readlines()
-        print("введите скидку")
-        procent = int(input())
+# def semnadchat():
+#     with open("test4.txt", "r") as file:
+#         data=file.readlines()
+#         print("введите скидку")
+#         procent = int(input())
+# 
+#         (sp2, suma, ch) = semnadchatint(data,procent)
+#         print(sp2, suma, ch)
 
-        (sp2, suma, ch) = semnadchatint(data,procent)
-        print(sp2, suma, ch)
-
-def semnadchatint(data,procent):
-    ch = 0
-    suma = 0
-    sp2 = []
-    sp = [int(x) for x in data[1:]]
-    for i in sp:
-        if i > 100:
-            sp2.append(i)
-        else:
-            suma = suma + i
-    sp2.sort()
-    for i in range(len(sp2)):
-        if i < len(sp2) // 2:
-            ch = sp2[i]
-            suma = (suma + sp2[i]) / 100 * procent
-        else:
-            suma = suma + sp2[i]
-    my_tuple = (sp2, suma, ch)
-    return my_tuple
+# def semnadchatint(data,procent):
+#     ch = 0
+#     suma = 0
+#     sp2 = []
+#     sp = [int(x) for x in data[1:]]
+#     for i in sp:
+#         if i > 100:
+#             sp2.append(i)
+#         else:
+#             suma = suma + i
+#     sp2.sort()
+#     for i in range(len(sp2)):
+#         if i < len(sp2) // 2:
+#             ch = sp2[i]
+#             suma = (suma + sp2[i]) / 100 * procent
+#         else:
+#             suma = suma + sp2[i]
+#     my_tuple = (sp2, suma, ch)
+#     return my_tuple
 
 # semnadchat()
 
@@ -177,3 +177,19 @@ from itertools import *
 #                         kol=kol+1
 #     print(kol)
 # chetirnadchat()
+
+def shestnadchat():
+    st="012345678"
+    kol=0
+    for i in product(st,repeat=12):
+        if i[0]!="0":
+            flag = True
+            for j in range(len(i)-1):
+                if (i[j]+i[j+1]%2==0 and i[j]<i[j+1]) or (i[j]+i[j+1]%2==1 and i[j]>i[j+1]):
+                    pass
+                else:
+                    flag=False
+            if flag==True:
+                kol=kol+1
+    print(kol)
+shestnadchat()
