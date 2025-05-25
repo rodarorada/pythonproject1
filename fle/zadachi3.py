@@ -3,7 +3,7 @@
 
 
 from itertools import *
-#
+
 # def shestnadchat():
 #     st="012345678"
 #     kol=0
