@@ -4,6 +4,7 @@
 
 import time
 import random as ran
+from copy import *
 
 # timestamp=time.time()
 # print("прошло с 1970 года", timestamp)
@@ -180,6 +181,15 @@ def win_to_computer(p):
     if p[2][0] == 2 and p[1][1] == 2 and p[0][2]==2: return True
     return False
 
+def II(p,sl):
+    for i in range(1,10):
+        p1=deepcopy(p)
+        koordinati = sl[i]
+        if p1[koordinati[0]][koordinati[1]]==0:
+            p1[koordinati[0]][koordinati[1]]=2
+            if win_to_computer(p1):
+                return i
+
 def player_move(p,sl):
     while True:
         print("ваш ход")
@@ -202,6 +212,8 @@ def computer_move(p,sl):
     print("ход противника")
     while True:
         otvet=ran.randint(1,9)
+        if II(p,sl):
+            otvet=II(p,sl)
         koordinati = sl[otvet]
         if p[koordinati[0]][koordinati[1]] == 0:
             p[koordinati[0]][koordinati[1]] = 2
@@ -235,8 +247,10 @@ def krestiki_noliki(sl):
             return 0
 # krestiki_noliki(sl)
 
-p=[[1, 0, 2],
-    [2, 1, 1],
-    [1, 2, 2]]
-
-print(win_to_igrok(p))
+# p=[[1, 0, 2],
+#     [2, 1, 1],
+#     [0, 2, 2]]
+#
+# p=computer_move(p,sl)
+# for i in p:
+#     print(i)
