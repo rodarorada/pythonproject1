@@ -106,7 +106,7 @@ def my_calc(rezim, a, b, t):
     return c
 
 
-# kalkulator()
+kalkulator()
 
 
 
