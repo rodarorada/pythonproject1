@@ -105,15 +105,20 @@ def my_calc(rezim, a, b, t):
     return c
 
 
-kalkulator()
+# kalkulator()
 
 
 
 
 
-p0le=[[1,0,0],
-      [0,1,0],
-      [1,0,1]]
+
+
+
+
+
+
+
+sl = {1: [0, 0], 2: [0, 1], 3: [0, 2], 4: [1, 0], 5: [1, 1], 6: [1, 2], 7: [2, 0], 8: [2, 1], 9: [2, 2]}
 
 def win_to_igrok(p):
     for line in p:
@@ -141,6 +146,97 @@ def win_to_igrok(p):
     if flag:
         return True
 
-    if p[0][0]==1 and p[1][1]==1 and p[2][2]: return True
-    if p[2][0] == 1 and p[1][1] == 1 and p[2][0]: return True
-# print(win_to_igrok(p0le))
+    if p[0][0]==1 and p[1][1]==1 and p[2][2]==1: return True
+    if p[2][0] == 1 and p[1][1] == 1 and p[2][0]==1: return True
+    return False
+
+def win_to_computer(p):
+    for line in p:
+        if line.count(2)==3:
+            return True
+
+    flag=True
+    for i in range(3):
+        if p[i][0]!=2:
+            flag=False
+    if flag:
+        return True
+
+    flag=True
+    for i in range(3):
+        if p[i][1]!=2:
+            flag=False
+    if flag:
+        return True
+
+    flag=True
+    for i in range(3):
+        if p[i][2]!=2:
+            flag=False
+    if flag:
+        return True
+
+    if p[0][0]==2 and p[1][1]==2 and p[2][2]: return True
+    if p[2][0] == 2 and p[1][1] == 2 and p[2][0]: return True
+    return False
+
+def player_move(p,sl):
+    while True:
+        print("ваш ход")
+        otvet=input()
+        if otvet.isdigit():
+            otvet=int(otvet)
+            if 0<otvet<10:
+                koordinati=sl[otvet]
+                if p[koordinati[0]][koordinati[1]]==0:
+                    p[koordinati[0]][koordinati[1]]=1
+                    return p
+                else:
+                    print("стоп")
+            else:
+                print("стоп")
+        else:
+            print("стоп")
+
+def computer_move(p,sl):
+    print("ход противника")
+    while True:
+        otvet=ran.randint(1,9)
+        koordinati = sl[otvet]
+        if p[koordinati[0]][koordinati[1]] == 0:
+            p[koordinati[0]][koordinati[1]] = 2
+            time.sleep(1)
+            return p
+
+def krestiki_noliki(sl):
+    p=[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]]
+    ochered=ran.randint(0,1)
+    for i in p:
+        print(i)
+    if ochered:
+        p=player_move(p,sl)
+        for i in p:
+            print(i)
+
+    while True:
+        p=computer_move(p,sl)
+        for i in p:
+            print(i)
+        if win_to_computer(p):
+            print("компьютор победил")
+            return 0
+        p=player_move(p,sl)
+        for i in p:
+            print(i)
+        if win_to_igrok(p):
+            print("ты победил")
+            return 0
+# krestiki_noliki(sl)
+
+p=[[1, 0, 2],
+    [2, 1, 1],
+    [1, 2, 2]]
+
+print(win_to_igrok(p))
