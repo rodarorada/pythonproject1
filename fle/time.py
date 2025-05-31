@@ -147,7 +147,7 @@ def win_to_igrok(p):
         return True
 
     if p[0][0]==1 and p[1][1]==1 and p[2][2]==1: return True
-    if p[2][0] == 1 and p[1][1] == 1 and p[2][0]==1: return True
+    if p[2][0] == 1 and p[1][1] == 1 and p[0][2]==1: return True
     return False
 
 def win_to_computer(p):
@@ -176,8 +176,8 @@ def win_to_computer(p):
     if flag:
         return True
 
-    if p[0][0]==2 and p[1][1]==2 and p[2][2]: return True
-    if p[2][0] == 2 and p[1][1] == 2 and p[2][0]: return True
+    if p[0][0]==2 and p[1][1]==2 and p[2][2]==2: return True
+    if p[2][0] == 2 and p[1][1] == 2 and p[0][2]==2: return True
     return False
 
 def player_move(p,sl):
