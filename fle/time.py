@@ -220,8 +220,13 @@ def computer_move(p,sl):
             time.sleep(1)
             return p
 
-def draw(sl,p):
-    if ((p[0].count("0")==0) and (p[1].count("0")==0)) and (p[2].count("0")==0):
+def draw(p):
+    kol=0
+    for j in range(3):
+        for i in p[j]:
+            if i!=0:
+                kol=kol+1
+    if kol==9:
         return False
     else:
         return True
@@ -239,7 +244,7 @@ def krestiki_noliki(sl):
             print(i)
 
     while True:
-        if draw(sl,p):
+        if draw(p):
             p=computer_move(p,sl)
             for i in p:
                 print(i)
