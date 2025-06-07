@@ -106,7 +106,7 @@ def my_calc(rezim, a, b, t):
     return c
 
 
-kalkulator()
+# kalkulator()
 
 
 
@@ -220,6 +220,12 @@ def computer_move(p,sl):
             time.sleep(1)
             return p
 
+def draw(sl,p):
+    if ((p[0].count("0")==0) and (p[1].count("0")==0)) and (p[2].count("0")==0):
+        return False
+    else:
+        return True
+
 def krestiki_noliki(sl):
     p=[[0, 0, 0],
         [0, 0, 0],
@@ -233,24 +239,29 @@ def krestiki_noliki(sl):
             print(i)
 
     while True:
-        p=computer_move(p,sl)
-        for i in p:
-            print(i)
-        if win_to_computer(p):
-            print("компьютор победил")
+        if draw(sl,p):
+            p=computer_move(p,sl)
+            for i in p:
+                print(i)
+            if win_to_computer(p):
+                print("компьютор победил")
+                return 0
+            p=player_move(p,sl)
+            for i in p:
+                print(i)
+            if win_to_igrok(p):
+                print("ты победил")
+                return 0
+        else:
+            print("ничья")
             return 0
-        p=player_move(p,sl)
-        for i in p:
-            print(i)
-        if win_to_igrok(p):
-            print("ты победил")
-            return 0
-# krestiki_noliki(sl)
+krestiki_noliki(sl)
 
-# p=[[1, 0, 2],
+# p=[[1, 2, 2],
 #     [2, 1, 1],
-#     [0, 2, 2]]
-#
+#     [1, 2, 2]]
+
+# p=print(draw(sl,p))
 # p=computer_move(p,sl)
 # for i in p:
 #     print(i)
