@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3064bce6-0573-403c-8790-0c465b43fbbc" name="Changes" comment="krestiki noliki2 II">
+    <list default="true" id="3064bce6-0573-403c-8790-0c465b43fbbc" name="Changes" comment="krestiki noliki2 draw work">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fle/time.py" beforeDir="false" afterPath="$PROJECT_DIR$/fle/time.py" afterDir="false" />
     </list>
@@ -350,7 +350,23 @@
       <option name="project" value="LOCAL" />
       <updated>1748705350957</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="krestiki noliki2 draw">
+      <option name="closed" value="true" />
+      <created>1749299227886</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1749299227886</updated>
+    </task>
+    <task id="LOCAL-00020" summary="krestiki noliki2 draw work">
+      <option name="closed" value="true" />
+      <created>1749299698668</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1749299698668</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -379,22 +395,8 @@
     <MESSAGE value="krestiki noliki" />
     <MESSAGE value="krestiki noliki2" />
     <MESSAGE value="krestiki noliki2 II" />
-    <option name="LAST_COMMIT_MESSAGE" value="krestiki noliki2 II" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/fle/time.py</url>
-          <line>224</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/fle/time.py</url>
-          <line>226</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="krestiki noliki2 draw" />
+    <MESSAGE value="krestiki noliki2 draw work" />
+    <option name="LAST_COMMIT_MESSAGE" value="krestiki noliki2 draw work" />
   </component>
 </project>

@@ -190,6 +190,15 @@ def II(p,sl):
             if win_to_computer(p1):
                 return i
 
+def II2(p,sl):
+    for i in range(1,10):
+        p1=deepcopy(p)
+        koordinati = sl[i]
+        if p1[koordinati[0]][koordinati[1]]==0:
+            p1[koordinati[0]][koordinati[1]]=1
+            if win_to_igrok(p1):
+                return i
+
 def player_move(p,sl):
     while True:
         print("ваш ход")
@@ -208,12 +217,16 @@ def player_move(p,sl):
         else:
             print("стоп")
 
-def computer_move(p,sl):
+def computer_move(p,sl,sloznost):
+    shans=ran.randint(1,sloznost)
     print("ход противника")
     while True:
         otvet=ran.randint(1,9)
         if II(p,sl):
             otvet=II(p,sl)
+        if II2(p,sl):
+            if shans==1:
+                otvet=II2(p,sl)
         koordinati = sl[otvet]
         if p[koordinati[0]][koordinati[1]] == 0:
             p[koordinati[0]][koordinati[1]] = 2
@@ -222,7 +235,7 @@ def computer_move(p,sl):
 
 def draw(p):
     kol=0
-    for j in range(3):
+    for j in range(len(p[0])):
         for i in p[j]:
             if i!=0:
                 kol=kol+1
@@ -232,6 +245,11 @@ def draw(p):
         return True
 
 def krestiki_noliki(sl):
+    while True:
+        print("сложность?")
+        otvet=int(input())
+        if str(otvet).isdigit():
+            break
     p=[[0, 0, 0],
         [0, 0, 0],
         [0, 0, 0]]
@@ -245,12 +263,16 @@ def krestiki_noliki(sl):
 
     while True:
         if draw(p):
-            p=computer_move(p,sl)
+            p=computer_move(p,sl,otvet)
             for i in p:
                 print(i)
             if win_to_computer(p):
                 print("компьютор победил")
                 return 0
+        else:
+            print("ничья")
+            return 0
+        if draw(p):
             p=player_move(p,sl)
             for i in p:
                 print(i)
