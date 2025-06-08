@@ -44,3 +44,24 @@ from itertools import *
 #                     kol=kol+1
 #     print(kol)
 # dvadcat_odin()
+
+def devetnadcat(n):
+    sp=[]
+    Nn1=int(n[0])+int(n[1])
+    Nn2=int(n[2])+int(n[3])
+    sp.append(Nn1)
+    sp.append(Nn2)
+    sp.sort()
+    Nn=str(sp[0])+str(sp[1])
+    return Nn
+
+kol2=0
+for i in range(1000,10000):
+    kol=0
+    for j in str(i):
+        if int(j)%2==1:
+            kol=kol+1
+    if kol==4:
+        if devetnadcat(str(i))=="616":
+            kol2=kol2+1
+print(kol2)

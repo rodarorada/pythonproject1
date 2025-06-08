@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3064bce6-0573-403c-8790-0c465b43fbbc" name="Changes" comment="krestiki noliki2 draw work">
+    <list default="true" id="3064bce6-0573-403c-8790-0c465b43fbbc" name="Changes" comment="krestiki noliki2 II2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fle/time.py" beforeDir="false" afterPath="$PROJECT_DIR$/fle/time.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fle/zadachi3.py" beforeDir="false" afterPath="$PROJECT_DIR$/fle/zadachi3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,34 +44,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.dz.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ege17.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.time.executor&quot;: &quot;Run&quot;,
-    &quot;Python.zadachi2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.zadachi3.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.dz.executor": "Run",
+    "Python.ege17.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.time.executor": "Run",
+    "Python.zadachi2.executor": "Run",
+    "Python.zadachi3.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "directory",
+      "repository"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ilush\PycharmProjects\PythonLearning\dz" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.time">
+  <component name="RunManager" selected="Python.zadachi3">
     <configuration name="dz" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonLearning" />
       <option name="ENV_FILES" value="" />
@@ -183,8 +184,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.time" />
         <item itemvalue="Python.zadachi3" />
+        <item itemvalue="Python.time" />
         <item itemvalue="Python.zadachi2" />
         <item itemvalue="Python.dz" />
         <item itemvalue="Python.ege17" />
@@ -366,7 +367,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749299698668</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="krestiki noliki2 II2">
+      <option name="closed" value="true" />
+      <created>1749302736765</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1749302736766</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -397,6 +406,7 @@
     <MESSAGE value="krestiki noliki2 II" />
     <MESSAGE value="krestiki noliki2 draw" />
     <MESSAGE value="krestiki noliki2 draw work" />
-    <option name="LAST_COMMIT_MESSAGE" value="krestiki noliki2 draw work" />
+    <MESSAGE value="krestiki noliki2 II2" />
+    <option name="LAST_COMMIT_MESSAGE" value="krestiki noliki2 II2" />
   </component>
 </project>

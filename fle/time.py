@@ -251,8 +251,8 @@ def krestiki_noliki(sl):
         if str(otvet).isdigit():
             break
     p=[[0, 0, 0],
-        [0, 0, 0],
-        [0, 0, 0]]
+       [0, 0, 0],
+       [0, 0, 0]]
     ochered=ran.randint(0,1)
     for i in p:
         print(i)
@@ -282,7 +282,7 @@ def krestiki_noliki(sl):
         else:
             print("ничья")
             return 0
-krestiki_noliki(sl)
+# krestiki_noliki(sl)
 
 # p=[[1, 2, 2],
 #     [2, 1, 1],
