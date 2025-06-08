@@ -3,6 +3,8 @@
 
 
 from itertools import *
+from operator import index
+
 
 # def shestnadchat():
 #     st="012345678"
@@ -94,3 +96,21 @@ def ss(a,s):
 #     otvet=otvet.count("6")
 #     print(otvet)
 # devet()
+
+# def shesdesatchetiri():
+#     sp=[0, 0, 0, 0, 0, 0, 0]
+#     otvet=ss(5*343**8+4*49**12+7**14-98,7)
+#     for i in otvet:
+#         sp[int(i)]=sp[int(i)]+1
+#     print(sp)
+#     print(sp.index(max(sp)))
+# shesdesatchetiri()
+
+# def semdesatchetiri():
+#     for x in "0123456789abcdefg":
+#         a=int("8"+x+"5678",25)
+#         b=int("457"+x+"69",25)
+#         c=int("145"+x+"1",25)
+#         if (a+b+c)%23==0:
+#             print((a+b+c)/23)
+# semdesatchetiri()
