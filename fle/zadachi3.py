@@ -114,3 +114,22 @@ def ss(a,s):
 #         if (a+b+c)%23==0:
 #             print((a+b+c)/23)
 # semdesatchetiri()
+
+def ss2(a,s):
+    b=[]
+    while a>0:
+        b.append(a%s)
+        a=a//s
+    b=b[::-1]
+    return b
+print(ss2(3*289**2024+81*49**81-6011,31))
+# a=3*289**2024
+# b=81*49**81-6011
+# print(b)
+# print(sum([i for i in ss2(3*289**2024+81*49**121-9*16**81-6011,31) if i<18]))
+
+def semdesatdevat():
+    for i in range(0,2301):
+        if ss(7**350+7**150-i,7).count("0")==200:
+            print(i,7**350+7**150-i)
+semdesatdevat()
