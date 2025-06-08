@@ -66,17 +66,31 @@ from itertools import *
 #             kol2=kol2+1
 # print(kol2)
 
-def dvadcat(n):
-    sp=[]
-    Nn1=int(n[0])*int(n[1])
-    Nn2=int(n[1])*int(n[2])
-    sp.append(Nn1)
-    sp.append(Nn2)
-    sp.sort()
-    Nn=str(sp[1])+str(sp[0])
-    return Nn
+# def dvadcat(n):
+#     sp=[]
+#     Nn1=int(n[0])*int(n[1])
+#     Nn2=int(n[1])*int(n[2])
+#     sp.append(Nn1)
+#     sp.append(Nn2)
+#     sp.sort()
+#     Nn=str(sp[1])+str(sp[0])
+#     return Nn
+#
+# for i in range(100,1000):
+#     if dvadcat(str(i))=="205":
+#         print(i)
+#         break
 
-for i in range(100,1000):
-    if dvadcat(str(i))=="205":
-        print(i)
-        break
+def ss(a,s):
+    b=""
+    while a>0:
+        b=b+str(a%s)
+        a=a//s
+    b=b[::-1]
+    return b
+
+# def devet():
+#     otvet=ss(49**10+7**30-49,7)
+#     otvet=otvet.count("6")
+#     print(otvet)
+# devet()

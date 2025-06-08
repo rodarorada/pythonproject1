@@ -282,13 +282,13 @@ def krestiki_noliki(sl):
         else:
             print("ничья")
             return 0
-# krestiki_noliki(sl)
+krestiki_noliki(sl)
 
 # p=[[1, 2, 2],
 #     [2, 1, 1],
 #     [1, 2, 2]]
-
-# p=print(draw(sl,p))
+#
+# p=print(draw(p))
 # p=computer_move(p,sl)
 # for i in p:
 #     print(i)
