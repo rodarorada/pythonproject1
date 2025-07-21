@@ -111,10 +111,8 @@ def my_calc(rezim, a, b, t):
 
 
 
-kalkulator()
-def multiplayer(multi):
-    _firstPlayerHP=100
-    _secondPlayerHP=100
+# kalkulator()
+
 
 
 
@@ -299,3 +297,61 @@ def krestiki_noliki(sl):
 # p=computer_move(p,sl)
 # for i in p:
 #     print(i)
+
+def game():
+    kol=0
+    _firstPlayerHP=100
+    _secondPlayerHP=100
+
+    print("начнём?")
+    otvet=input()
+    if otvet=="да":
+        print("старт через 3...")
+        time.sleep(1)
+        print("старт через 2...")
+        time.sleep(1)
+        print("старт через 1...")
+        time.sleep(1)
+        print("начали!")
+
+
+        while True:
+            print(f"{_firstPlayerHP}           {_secondPlayerHP}")
+            print(f"круг:{kol}")
+            print("угадай что за число от 1 до 20 я загадал\n")
+            _firstPlayerHP=_randomGame(_firstPlayerHP, kol)
+            if _firstPlayerHP<=0:
+                print("второй игрок победил")
+                return 0
+
+            print(f"{_firstPlayerHP}           {_secondPlayerHP}")
+            print(f"круг:{kol}")
+            print("угадай что за число от 1 до 20 я загадал\n")
+            _secondPlayerHP=_randomGame(_secondPlayerHP, kol)
+            kol=kol+1
+            if _secondPlayerHP<=0:
+                print("первый игрок победил")
+                return 0
+
+    else:
+        print("как это?")
+
+def _randomGame(_PlayerHP, kol):
+    x=1
+    zadacha = ran.randint(1, 20)
+    dogatka = input()
+    if 15>kol>=10:
+        x=2
+    elif kol>=15:
+        x=3
+
+    if int(dogatka) < zadacha:
+        _PlayerHP = _PlayerHP - (zadacha - int(dogatka))*x
+    elif int(dogatka) > zadacha:
+        _PlayerHP = _PlayerHP - (int(dogatka) - zadacha)*x
+    else:
+        _PlayerHP = _PlayerHP + 10
+
+    print(f"правильный ответ:{zadacha}")
+    return _PlayerHP
+game()
