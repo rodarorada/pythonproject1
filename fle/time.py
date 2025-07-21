@@ -30,58 +30,58 @@ def kalkulator():
     print("режим?")
     print("1 - сложение    2 - вычитание\n\n3 - умножение   4 - деление(с округлением)\n")
     rezim = input()
+    print("мультиплеер?")
+    print("y/n")
+    multi=input()
     while True:
         a = ran.randint(sloznast2, sloznast)
         b = ran.randint(sloznast2, sloznast)
+        print(f"этаж - {etaz}             жизни - {zizni}")
         c = my_calc(rezim, a, b, t)
-        if c!=0:
-            if etaz!=10:
-                if zizni!=0:
-                    if etaz!=0:
-                        print(f"этаж - {etaz}             жизни - {zizni}")
-                        start = time.time()
-                        rezultat=input()
-                        end=time.time()
-                        if end-start<=10:
-                            if rezultat == str(c):
-                                print("правильно!")
-                                etaz = etaz + 1
-                                time.sleep(2)
-                                sloznast=int(sloznast**1.25)
-                                sloznast2=int(sloznast2*1.25)
-                            else:
-                                print(f"неправильно! правильный ответ {c}!")
-                                time.sleep(2)
-                                etaz=etaz-1
-                                sloznast=int(sloznast/4)
-                                zizni=zizni-1
-                                sloznast2=int(sloznast2/1.25)
+        if etaz!=10:
+            if zizni!=0:
+                if etaz!=0:
+                    start = time.time()
+                    rezultat=input()
+                    end=time.time()
+                    if end-start<=10:
+                        if rezultat == str(c):
+                            print("правильно!")
+                            etaz = etaz + 1
+                            time.sleep(2)
+                            sloznast=int(sloznast**1.25)
+                            sloznast2=int(sloznast2*1.25)
                         else:
-                            if rezultat == str(c):
-
-                                print("ты прав, но ты не успел!")
-                                time.sleep(2)
-                                etaz=etaz-1
-                                sloznast=int(sloznast/4)
-                                zizni=zizni-1
-                                sloznast2 = int(sloznast2 / 1.25)
-                            else:
-                                print(f"ты не успел! правильный ответ {c}")
-                                time.sleep(2)
-                                etaz=etaz-1
-                                sloznast=int(sloznast/4)
-                                zizni=zizni-1
-                                sloznast2 = int(sloznast2 / 1.25)
+                            print(f"неправильно! правильный ответ {c}!")
+                            time.sleep(2)
+                            etaz=etaz-1
+                            sloznast=int(sloznast/4)
+                            zizni=zizni-1
+                            sloznast2=int(sloznast2/1.25)
                     else:
-                        print("ты не смог продержаться очень долго, но ты старался!")
-                        return 0
+                        if rezultat == str(c):
+
+                            print("ты прав, но ты не успел!")
+                            time.sleep(2)
+                            etaz=etaz-1
+                            sloznast=int(sloznast/4)
+                            zizni=zizni-1
+                            sloznast2 = int(sloznast2 / 1.25)
+                        else:
+                            print(f"ты не успел! правильный ответ {c}")
+                            time.sleep(2)
+                            etaz=etaz-1
+                            sloznast=int(sloznast/4)
+                            zizni=zizni-1
+                            sloznast2 = int(sloznast2 / 1.25)
                 else:
-                    print("у тебя нет жизней!")
+                    print("ты не смог продержаться очень долго, но ты старался!")
                     return 0
             else:
-                print("ты победил!")
+                print("у тебя нет жизней!")
                 return 0
         else:
+            print("ты победил!")
             return 0
 
 
@@ -89,12 +89,15 @@ def my_calc(rezim, a, b, t):
     if rezim == "1":
         c = a + b
         print(f"{a}+{b}=")
+        sloznost1=1.25
     elif rezim == "2":
         c = b - a
         print(f"{b}-{a}=")
+        sloznost1=2
     elif rezim == "3":
         c = a * b
         print(f"{a}*{b}=")
+        sloznost1=1.15
     elif rezim == "4":
         print("режим времено недоступен.")
         c=0
@@ -106,8 +109,12 @@ def my_calc(rezim, a, b, t):
     return c
 
 
-# kalkulator()
 
+
+kalkulator()
+def multiplayer(multi):
+    _firstPlayerHP=100
+    _secondPlayerHP=100
 
 
 
@@ -282,7 +289,7 @@ def krestiki_noliki(sl):
         else:
             print("ничья")
             return 0
-krestiki_noliki(sl)
+# krestiki_noliki(sl)
 
 # p=[[1, 2, 2],
 #     [2, 1, 1],

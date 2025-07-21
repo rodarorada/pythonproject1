@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3064bce6-0573-403c-8790-0c465b43fbbc" name="Changes" comment="semdesatchetiri">
+    <list default="true" id="3064bce6-0573-403c-8790-0c465b43fbbc" name="Changes" comment="semdesatdevat">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fle/zadachi3.py" beforeDir="false" afterPath="$PROJECT_DIR$/fle/zadachi3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fle/time.py" beforeDir="false" afterPath="$PROJECT_DIR$/fle/time.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +70,7 @@
       <recent name="C:\Users\ilush\PycharmProjects\PythonLearning\dz" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.zadachi3">
+  <component name="RunManager" selected="Python.time">
     <configuration name="dz" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonLearning" />
       <option name="ENV_FILES" value="" />
@@ -183,8 +183,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.zadachi3" />
         <item itemvalue="Python.time" />
+        <item itemvalue="Python.zadachi3" />
         <item itemvalue="Python.zadachi2" />
         <item itemvalue="Python.dz" />
         <item itemvalue="Python.ege17" />
@@ -406,7 +406,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749395133412</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="semdesatdevat">
+      <option name="closed" value="true" />
+      <created>1749396391690</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1749396391690</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -442,6 +450,7 @@
     <MESSAGE value="dvadcat" />
     <MESSAGE value="devet" />
     <MESSAGE value="semdesatchetiri" />
-    <option name="LAST_COMMIT_MESSAGE" value="semdesatchetiri" />
+    <MESSAGE value="semdesatdevat" />
+    <option name="LAST_COMMIT_MESSAGE" value="semdesatdevat" />
   </component>
 </project>
