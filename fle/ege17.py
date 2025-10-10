@@ -173,3 +173,24 @@ import random as ran
 #                             kol=kol+1
 #     print(kol)
 # jkxah()
+
+# sp=[]
+# UserKolInput=int(input())
+# for h in range(UserKolInput):
+#     UserInput=input()
+#     sp.append(UserInput)
+# #BigList=[i[::-1] for i in sp]
+#
+# sp2=[]
+# for i in sp:
+#     l = list(i)
+#     l[0] = i[-1]
+#     l[-1] = i[0]
+#     sp2.append(''.join(l))
+# print(sp)
+# print(sp2)
+
+
+m=[[1,2,3],[4,5,6],[7,8,9]]
+for i in m[::-1]:
+    .append(i)
