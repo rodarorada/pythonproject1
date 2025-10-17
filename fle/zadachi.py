@@ -771,3 +771,23 @@ import random as ran
 # print("Main diagonal:", main_diag)
 # print("Secondary diagonal", sec_diag)
 
+# mat=[[5,-2,3],[-1,7,-6]]
+# for i in range(len(mat)):
+#     for j in range(len(mat[0])):
+#         if mat[i][j]<0:
+#             mat[i][j]=0
+# print("Matrix after replacing negatives:", mat)
+
+# mat=[[1,2,3],[4,5,6]]
+# flat=[num for row in mat for num in row]
+# print("Flattened array:", flat)
+
+# arr=[1,2,3,4,5,6,7,8,9]
+# mat=[arr[i:i+3]for i in range(0,len(arr), 3)]
+# for row in mat:
+#     print(row)
+
+# n=3
+# identity=[[1 if i==j else 0 for j in range(n)] for i in range(n)]
+# for row in identity:
+#     print(row)
