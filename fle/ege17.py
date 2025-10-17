@@ -190,26 +190,26 @@ import random as ran
 # print(sp)
 # print(sp2)
 
-import tkinter as tk
-top=tk.Tk()
-top.title("Listbox with Scrollbar")
-frame=tk.Frame(top)
-frame.pack(padx=10,pady=10,fill=tk.BOTH,expand=True)
-
-scrollbar=tk.Scrollbar(frame)
-scrollbar.pack(side=tk.RIGHT,fill=tk.Y)
-
-listbox=tk.Listbox(frame,yscrollcommand=scrollbar.set)
-listbox.pack(side=tk.LEFT,fill=tk.BOTH,expand=True)
-scrollbar.config(command=listbox.yview)
-
-lb=listbox(top)
-lb.insert(1, "Python")
-lb.insert(2, "Java")
-lb.insert(3, "C++")
-lb.insert(4, "Any other")
-lb.pack()
-
-for i in range(100):
-    listbox.insert(tk.END, f"Item {i+1} {Exstra}")
-top.mainloop()
+# import tkinter as tk
+# top=tk.Tk()
+# top.title("Listbox with Scrollbar")
+# frame=tk.Frame(top)
+# frame.pack(padx=10,pady=10,fill=tk.BOTH,expand=True)
+#
+# scrollbar=tk.Scrollbar(frame)
+# scrollbar.pack(side=tk.RIGHT,fill=tk.Y)
+#
+# listbox=tk.Listbox(frame,yscrollcommand=scrollbar.set)
+# listbox.pack(side=tk.LEFT,fill=tk.BOTH,expand=True)
+# scrollbar.config(command=listbox.yview)
+#
+# lb=listbox(top)
+# lb.insert(1, "Python")
+# lb.insert(2, "Java")
+# lb.insert(3, "C++")
+# lb.insert(4, "Any other")
+# lb.pack()
+#
+# for i in range(100):
+#     listbox.insert(tk.END, f"Item {i+1} {Exstra}")
+# top.mainloop()

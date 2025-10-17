@@ -607,13 +607,32 @@ import random as ran
 #     print(kol)
 # AAAAAAAAAAAAAAAAA()
 
-def dvenadcsati():
-    with open("test2.txt", "r") as file:
-            data=[int(x) for x in file.readlines()]
-            for i in data:
-                chet=[int(x) for x in data if x%2==0]
-                nechet = [int(x) for x in data if x % 2 == 1]
-                sp=[int(x) for x in str(i).split()]
-                print(chet, nechet)
-                # if sp.count(i)==1:
-dvenadcsati()
+# def dvenadcsati():
+#     with open("test2.txt", "r") as file:
+#             data=[int(x) for x in file.readlines()]
+#             for i in data:
+#                 chet=[int(x) for x in data if x%2==0]
+#                 nechet = [int(x) for x in data if x % 2 == 1]
+#                 sp=[int(x) for x in str(i).split()]
+#                 print(chet, nechet)
+#                 # if sp.count(i)==1:
+# dvenadcsati()
+
+def calculate_total_price(products, prices):
+    total=0
+
+    for i in range(len(products)):
+        product=products[i]
+        if product in prices:
+            total+=prices[product]
+        else:
+            print("product found:", product)
+
+    average=total//len(prices)
+    return total
+
+product_list=["Laptop", "Mouse", "Keyboard"]
+prices_dict={"Laptop": 1200, "Mouse": 25, "Keyboard": 60}
+
+total_price=calculate_total_price(product_list,prices_dict)
+print("Total price:", total_price)
