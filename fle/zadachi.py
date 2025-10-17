@@ -618,21 +618,156 @@ import random as ran
 #                 # if sp.count(i)==1:
 # dvenadcsati()
 
-def calculate_total_price(products, prices):
-    total=0
+# def calculate_total_price(products, prices):
+#     total=0
+#
+#     for i in range(len(products)):
+#         product=products[i]
+#         if product in prices:
+#             total+=prices[product]
+#         else:
+#             print("product found:", product)
+#
+#     average=total//len(prices)
+#     return total
+#
+# product_list=["Laptop", "Mouse", "Keyboard"]
+# prices_dict={"Laptop": 1200, "Mouse": 25, "Keyboard": 60}
+#
+# total_price=calculate_total_price(product_list,prices_dict)
+# print("Total price:", total_price)
 
-    for i in range(len(products)):
-        product=products[i]
-        if product in prices:
-            total+=prices[product]
-        else:
-            print("product found:", product)
+# arr=[10,20,30,40,50]
+# print("Array elements:", arr)
+#
+# print("1===")
+#
+# arr=[5,10,15,20]
+# print("First element:", arr[0])
+# print("Last element:", arr[-1])
+#
+# print("2===")
+#
+# arr=[2,4,6,8]
+# arr[2]=10
+# print("Modified array:", arr)
+#
+# print("3===")
+#
+# arr=[10,20,30,40]
+# print("Sum:", sum(arr))
+# print("Average:", sum(arr)/len(arr))
+#
+# print("4===")
+#
+# arr=[7,2,9,5]
+# print("Maximum:", max(arr))
+# print("Minimum:", min(arr))
+#
+# print("===")
+#
+# arr=[1,2,3,4,5]
+# arr.reverse()
+# print("Reversed:", arr)
+#
+# print("5===")
+#
+# arr=[4,1,3,9,7]
+# print("Ascending:", sorted(arr))
+# print("Descending:", sorted(arr, reverse=True))
+#
+# print("6===")
+#
+# arr=[3,6,9,12,15]
+# num=9
+# if num in arr:
+#     print(num, "found at index", arr.index(num))
+# else:
+#     print(num, "not found")
+#
+# print("7===")
+#
+# arr=[2,5,7,8,10,3]
+# even=len([x for x in arr if x%2==0])
+# odd=len([x for x in arr if x%2!=0])
+# print("Even:", even, "Odd:", odd)
+#
+# print("8===")
+#
+# arr=[1,2,2,3,4,4,5]
+# unique=list(set(arr))
+# print("Unique elements:", unique)
+#
+# print("9===")
+#
+# arr=[12,5,9,21,14]
+# arr.sort()
+# print("second largest:", arr[-2])
+#
+# print("10===")
+#
+# arr1=[10,20,30]
+# arr2=arr1.copy()
+# print("Copied array:", arr2)
+#
+# print("11===")
+#
+# m=[
+#     [1,2,3],
+#     [4,5,6],
+#     [7,8,9]
+# ]
+# for row in m:
+#     print(row)
+#
+# print("12===")
+#
+# mat=[[1,2],[3,4]]
+# print("Element at (0,1):", mat[0][1])
+# print("Element at (1,0)", mat[1][0])
+#
+# print("13===")
+#
+# mat=[[1,2,3],[4,5,6]]
+# total=sum(sum(row) for row in mat)
+# print("Sum of all elements", total)
+#
+# print("14===")
+#
+# mat=[[1,2,3],[4,5,6]]
+# transpose=[[row[i] for row in mat] for i in range(len(mat[0]))]
+# print("Transpose:", transpose)
+#
+# print("15===")
+#
+# mat=[[3,7,1], [9,5,6]]
+# max_value=max(max(row) for row in mat)
+# print("Maximum element:", max_value)
+#
+# print("16===")
+#
+# a=[[1,2],[3,4]]
+# b=[[5,6],[7,8]]
+# result=[[a[i][j] + b[i][j] for j in range(len(a[0]))]for i in range(len(a))]
+# print("Sum of matrices:", result)
+#
+# print("17===")
+# a=[[1,2],[3,4]]
+# b=[[2,0],[1,2]]
+# result=[[sum(a[i][k]*b[k][j] for k in range(len(b))) for j in range(len(b[0]))]for i in range(len(a))]
+# print("Matrix product:", result)
 
-    average=total//len(prices)
-    return total
+# mat=[[1,2,3],[4,5,6]]
+# col_sum=[sum(row[i] for row in mat) for i in range(len(mat[0]))]
+# print("Column sums:", col_sum)
 
-product_list=["Laptop", "Mouse", "Keyboard"]
-prices_dict={"Laptop": 1200, "Mouse": 25, "Keyboard": 60}
+# mat=[
+#     [5,2,3],
+#     [4,6,7],
+#     [8,9,1]
+# ]
+# main_diag=[mat[i][i] for i in range(len(mat))]
+# sec_diag=[mat[i][-i-1] for i in range(len(mat))]
+# print("Main diagonal:", main_diag)
+# print("Secondary diagonal", sec_diag)
 
-total_price=calculate_total_price(product_list,prices_dict)
-print("Total price:", total_price)
