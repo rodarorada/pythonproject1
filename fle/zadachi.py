@@ -791,3 +791,23 @@ import random as ran
 # identity=[[1 if i==j else 0 for j in range(n)] for i in range(n)]
 # for row in identity:
 #     print(row)
+
+def count_letters():
+    text=input("Enter text: ")
+    text.lower()
+
+    count={}
+
+    for ch in text:
+        if ch.isalpha()==False:
+            ch.replace(ch, "")
+        if ch in count:
+            count[ch]=count[ch] + 1
+        else:
+            count[ch]=1
+
+    for key in count:
+        print(key, "=",count[key])
+    # print(count)
+
+count_letters()
