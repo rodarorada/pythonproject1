@@ -417,6 +417,8 @@
 # diapozon()
 #
 import random as ran
+from ast import iter_fields
+
 
 # def generator():
 #     st=""
@@ -792,22 +794,161 @@ import random as ran
 # for row in identity:
 #     print(row)
 
-def count_letters():
-    text=input("Enter text: ")
-    text.lower()
+# def count_letters():
+#     text=input("Enter text: ")
+#     text.lower()
+#
+#     count={}
+#
+#     for ch in text:
+#         if ch.isalpha()==False:
+#             ch.replace(ch, "")
+#         if ch in count:
+#             count[ch]=count[ch] + 1
+#         else:
+#             count[ch]=1
+#
+#     for key in count:
+#         print(key, "=",count[key])
+#     # print(count)
+#
+# count_letters()
 
-    count={}
+# def binary_search(lst, target):
+#     low,high=0,len(lst)-1
+#     while low<=high:
+#         mid=(low+high)//2
+#         if lst[mid]==target:
+#             return mid
+#         elif lst[mid]<target:
+#             low=mid+1
+#         else: high=mid-1
+#     return -1
+#
+# nums=[2,4,6,8,10,12,14]
+# print("Index:", binary_search(nums,10))
 
-    for ch in text:
-        if ch.isalpha()==False:
-            ch.replace(ch, "")
-        if ch in count:
-            count[ch]=count[ch] + 1
-        else:
-            count[ch]=1
+# def binarySearchDict(d,target):
+#     values=sorted(d.values())
+#     low, high=0,len(values)-1
+#     while low<=high:
+#         mid=(low+high)//2
+#         if values[mid]==target:
+#             return mid
+#         elif values[mid]<target:
+#             low=mid+1
+#         else: high=mid-1
+#     return False
+#
+# studets={"Alice": 82, "Bob": 75, "Charlie": 90, "Diana": 88}
+# print(binarySearchDict(studets,90))
 
-    for key in count:
-        print(key, "=",count[key])
-    # print(count)
+# def bubbleSortDict(d):
+#     items=list(d.items())
+#     for i in range(len(items)):
+#         for j in range(len(items)-i-1):
+#             if items[j][1]>items[j+1][1]:
+#                 items[j], items[j+1]=items[j+1],items[j]
+#     return dict(items)
+#
+# scores={"A": 40, "B": 20, "C": 50, "D": 30}
+# print("sorted dict:", bubbleSortDict(scores))
+#
+# def binarySearchPeople(people, key, value):
+#     low, high=0, len(people)-1
+#     while low <=high:
+#         mid=(low+high)//2
+#         if people[mid][key]==value:
+#             return people[mid]
+#         elif people[mid][key]<value:
+#             low=mid+1
+#         else:
+#             high=mid-1
+#     return None
+#
+# people=[
+#     {"name": "Alice", "age": 22},
+#     {"name": "Bob", "age": 25},
+#     {"name": "charlie", "age": 30}
+# ]
+# print(binarySearchPeople(people, "age", 25))
+#
+# def bubbleSortByKey(lst, key):
+#     for i in range(len(lst)):
+#         for j in range(len(lst)-i-1):
+#             if lst[j][key]>lst[j+1][key]:
+#                 lst[j], lst[j+1]=lst[j+1],lst[j]
+#     return lst
+#
+# data=[
+#     {"name": "Zara", "marks": 88},
+#     {"name": "Tom", "marks": 70},
+#     {"name": "Anna", "marks": 95}
+# ]
+# print(bubbleSortByKey(data,"marks"))
 
-count_letters()
+# def binarySearchKeys(d,target):
+#     keys=sorted(d.keys())
+#     low, high=0, len(keys)-1
+#     while low <=high:
+#         mid=(low+high)//2
+#         if keys[mid]==target:
+#             return True
+#         elif keys[mid]<target:
+#             low=mid+1
+#         else:
+#             high=mid-1
+#     return False
+#
+# words={"apple": 3, "banana": 5, "cherry": 2, "date": 4}
+# print(binarySearchKeys(words, "cherry"))
+
+# def bubbleSortTuples(_tuplesList):
+#     for i in range(len(_tuplesList)):
+#         for j in range(len(_tuplesList)-i-1):
+#             if _tuplesList[j][1]>_tuplesList[j+1][1]:
+#                 _tuplesList[j], _tuplesList[j+1]=_tuplesList[j+1],_tuplesList[j]
+#     return _tuplesList
+#
+# data=[("Math", 80), ("Science", 70), ("English", 90)]
+# print(bubbleSortTuples(data))
+#
+# def binarySearchValue(d,value):
+#     _sortedValues=sorted(d.values())
+#     low, high=0, len(_sortedValues)-1
+#     while low <=high:
+#         mid=(low+high)//2
+#         if _sortedValues[mid]==value:
+#             return True
+#         elif _sortedValues[mid]<value:
+#             low=mid+1
+#         else:
+#             high=mid-1
+#     return False
+#
+# prices={"pen": 10, "book": 25, "bag": 40, "pencil": 5}
+# print(binarySearchValue(prices,25))
+
+# def bubbleSort(lst,):
+#     for i in range(len(lst)):
+#         for j in range(len(lst)-i-1):
+#             if lst[j]>lst[j+1]:
+#                 lst[j], lst[j+1]=lst[j+1],lst[j]
+#     return lst
+#
+# def binarySearch(lst,target):
+#     low, high=0, len(lst)-1
+#     while low <=high:
+#         mid=(low+high)//2
+#         if lst[mid]==target:
+#             return mid
+#         elif lst[mid]<target:
+#             low=mid+1
+#         else:
+#             high=mid-1
+#     return -1
+#
+# numbers=[45,12,89,33,67,25]
+# sortedNums=bubbleSort(numbers)
+# print("Sorted:", sortedNums)
+# print("Search result (Index):", binarySearch(sortedNums,33))
